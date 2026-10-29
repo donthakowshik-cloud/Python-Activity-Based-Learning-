@@ -1,6 +1,3 @@
-# Case Study 99: E-Commerce Order Processing
-
-# Product tuple: (name, price, opening_stock)
 products = [
     ("Laptop", 50000, 10),
     ("Mouse", 500, 50),
