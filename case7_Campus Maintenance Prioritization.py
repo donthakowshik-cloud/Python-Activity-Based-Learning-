@@ -1,8 +1,3 @@
-# Case Study 97: Campus Maintenance Prioritization
-
-# Incident tuple: (ID, location, severity, frequency)
-# Severity: 1 = low, 2 = medium, 3 = high
-
 incidents = [
     ("I101", "Classroom", 2, 5),
     ("I102", "Laboratory", 3, 4),
@@ -21,9 +16,7 @@ for incident_id, location, severity, frequency in incidents:
         priority = 2
     else:
         priority = 1
-
-    # Give additional priority to frequent reports
-    score = priority * 10 + frequency
+     score = priority * 10 + frequency
 
     if severity == 3 or frequency >= 7:
         status = "Urgent"
@@ -35,8 +28,6 @@ for incident_id, location, severity, frequency in incidents:
     ranked.append(
         (incident_id, location, severity, frequency, score, status)
     )
-
-# Sort by score in descending order
 for i in range(len(ranked)):
     for j in range(i + 1, len(ranked)):
         if ranked[j][4] > ranked[i][4]:
