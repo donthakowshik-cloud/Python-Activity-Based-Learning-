@@ -1,6 +1,3 @@
-# Case Study 93: Transport Fare Reconciliation
-
-# Passenger tuple: (name, category, distance, amount_collected)
 passengers = [
     ("Arun", "Adult", 10, 50),
     ("Priya", "Student", 8, 20),
