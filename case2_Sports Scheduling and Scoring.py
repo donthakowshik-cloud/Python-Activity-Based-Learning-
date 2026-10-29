@@ -1,14 +1,9 @@
-# Case Study 92: Sports Scheduling and Scoring
-
-# Event tuple: (event, team1, team2, time)
 events = [
     ("Cricket", "Team A", "Team B", "10:00"),
     ("Football", "Team C", "Team D", "10:00"),
     ("Volleyball", "Team A", "Team C", "11:00"),
     ("Basketball", "Team B", "Team D", "12:00")
 ]
-
-# Result tuple: (event, winner)
 results = [
     ("Cricket", "Team A"),
     ("Football", "Team D"),
@@ -38,8 +33,6 @@ for i in range(len(events)):
             conflicts += 1
 
 print("Total time conflicts:", conflicts)
-
-# Award 3 points for a win
 for event_name, winner in results:
     for i in range(len(teams)):
         if teams[i] == winner:
@@ -50,8 +43,6 @@ ranking = []
 
 for i in range(len(teams)):
     ranking.append((teams[i], points[i]))
-
-# Sort by points in descending order
 for i in range(len(ranking)):
     for j in range(i + 1, len(ranking)):
         if ranking[j][1] > ranking[i][1]:
