@@ -1,6 +1,3 @@
-# Case Study 96: Library Resource Distribution
-
-# Branch tuple: (branch, required_copies, priority)
 branches = [
     ("Main Library", 40, 1),
     ("Science Branch", 30, 2),
@@ -9,8 +6,6 @@ branches = [
 ]
 
 available_copies = 100
-
-# Lower priority number means higher priority
 for i in range(len(branches)):
     for j in range(i + 1, len(branches)):
         if branches[j][2] < branches[i][2]:
