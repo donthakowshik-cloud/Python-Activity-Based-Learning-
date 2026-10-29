@@ -1,8 +1,3 @@
-# Case Study 98: University Academic Progression Audit
-
-# Subject tuple:
-# (subject, marks, attendance_percentage, prerequisite_completed)
-
 subjects = [
     ("Python", 75, 85, True),
     ("Mathematics", 42, 80, True),
