@@ -1,5 +1,3 @@
-# Case Study 100: Smart Campus Management
-
 students = []
 events = []
 resources = []
