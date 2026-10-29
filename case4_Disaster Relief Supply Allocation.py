@@ -1,8 +1,3 @@
-	# Case Study 94: Disaster Relief Supply Allocation
-
-# Area tuple: (area, required_quantity, urgency)
-# Urgency: 1 = highest priority
-
 requirements = [
     ("Area A", 50, 1),
     ("Area B", 40, 3),
@@ -11,8 +6,6 @@ requirements = [
 ]
 
 stock = 100
-
-# Sort areas by urgency
 for i in range(len(requirements)):
     for j in range(i + 1, len(requirements)):
         if requirements[j][2] < requirements[i][2]:
