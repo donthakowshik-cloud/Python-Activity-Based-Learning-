@@ -1,6 +1,3 @@
-# Case Study 91: Registration Record Analyzer
-
-# Format: ID|Name|Age|Email
 records = [
     "R101|Arun|20|arun@gmail.com",
     "R102|Priya|19|priya@gmail.com",
