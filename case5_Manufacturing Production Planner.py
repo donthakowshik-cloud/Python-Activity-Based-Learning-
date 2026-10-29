@@ -1,6 +1,3 @@
-# Case Study 95: Manufacturing Production Planner
-
-# Material tuple: (material, available, required_per_unit)
 materials = [
     ("Steel", 500, 5),
     ("Plastic", 300, 2),
@@ -32,8 +29,6 @@ if planned_production >= order_demand:
 else:
     print("Status: Material shortage exists")
     print("Units short:", order_demand - planned_production)
-
-# Simulated production quality data
 produced = planned_production
 defects = 6
 defect_limit_percent = 5
